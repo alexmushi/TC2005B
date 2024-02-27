@@ -1,0 +1,25 @@
+{
+  "name": "tc2005b",
+  "version": "1.0.0",
+  "description": "El laboratorio 10",
+  "main": "lab8.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmushi/TC2005B.git"
+  },
+  "keywords": [
+    "tc2005b"
+  ],
+  "author": "Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexmushi/TC2005B/issues"
+  },
+  "homepage": "https://github.com/alexmushi/TC2005B#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
