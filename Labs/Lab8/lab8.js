@@ -2,7 +2,7 @@ console.log("wello horld");
 
 const filesystem = require("fs");
 
-filesystem.writeFileSync("hola.txt", "wello horld")
+filesystem.writeFileSync("hoal.txt", "wello horld")
 
 const http = require("http");
 
