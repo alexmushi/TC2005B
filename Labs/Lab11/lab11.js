@@ -22,6 +22,7 @@ app.get('/bienvenida', (request, response, next) => {
     response.send(`
     <h1>Bienvenido a la página de bienvenida</h1>
     <p>Esta es una página de bienvenida.</p>
+    <p>El archivo package.json es un archivo fundamental en proyectos de Node.js y aplicaciones basadas en JavaScript. Contiene información esencial sobre la configuración y las dependencias del proyecto.</p>
     `);
 });
 
