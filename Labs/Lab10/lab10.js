@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
     } else {
         // Cualquier otra ruta: devuelve un error 404
         res.writeHead(404, { 'Content-Type': 'text/html' });
-        res.end('<h1>Error 404: Página no encontrada</h1>');
+        res.end('<h1>Error 404: Pagina no encontrada</h1>');
     }
 });
 
