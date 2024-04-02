@@ -1,0 +1,47 @@
+<%- include("includes/header.ejs") %>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">
+                Bienvenidos a Shimano Prints
+            </p>
+            <p class="subtitle">
+                Tu fuente de impresiones 3D personalizadas y de alta calidad
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Acerca de nosotros</h1>
+            <p>
+                Somos una tienda especializada en la creación de impresiones 3D personalizadas para todo tipo de necesidades, desde prototipos hasta objetos decorativos. Utilizamos tecnología de vanguardia para garantizar la mejor calidad en cada impresión.
+            </p>
+        </div>
+    </section>
+
+    <h3 class="title is-3">Pedidos Recibidos:</h3>
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th>Pedido</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let pedido of pedidos) { %>
+            <% if(pedido.nombre && pedido.email) { %>
+                <tr>
+                    <td><%= pedido.nombre %></td>
+                    <td><%= pedido.email %></td>
+                </tr>
+            <% } %>
+        <% } %>
+    </tbody>
+</table>
+
+
+</body>
+
+<%- include('includes/footer.ejs') %>

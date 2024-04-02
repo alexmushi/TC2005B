@@ -1,0 +1,39 @@
+<%- include("includes/header.ejs") %>
+
+<h3 id="title" class="title"> Envía tu pedido de impresión 3D </h3>
+<p> Rellena el formulario para enviar tu pedido de impresión 3D:</p>
+<br></br>
+<div class='container'>
+  <form action="/pedido" method="POST">
+    <label class="label" for="nombre">Nombre:</label>
+    <input name="nombre" class="input" type="text" id="nombre"><br>
+
+    <label class="label" for="email">Email:</label>
+    <input name="email" class="input" type="email" id="email"><br>
+
+    <label class="label" for="modelo">Modelo 3D:</label>
+    <input name="modelo" class="input" type="text" id="modelo"><br>
+
+    <label class="label" for="dimensiones">Dimensiones (alto x ancho x profundidad):</label>
+    <input name="dimensiones" class="input" type="text" id="dimensiones"><br>
+
+    <label class="label" for="material">Material:</label>
+    <select name="material" class="input" id="material">
+      <option value="PLA">PLA</option>
+      <option value="TPU">TPU</option>
+      <option value="PETG">PETG</option>
+    </select><br>
+
+    <label class="label" for="color">Color:</label>
+    <input name="color" class="input" type="text" id="color"><br>
+
+    <label class="label" for="comentarios">Comentarios adicionales:</label>
+    <textarea name="comentarios" class="textarea" id="comentarios"></textarea><br><br>
+
+    <button type='submit' class="button is-primary">Enviar Pedido</button>
+  </form>
+</div>
+
+<%- include("includes/boton.ejs") %>
+
+<%- include("includes/footer.ejs") %>
