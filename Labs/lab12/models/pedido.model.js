@@ -1,14 +1,14 @@
 const contenido = [];
 
-module.exports = class Pedido {
-    constructor(mi_pedido, mi_email) {
-        this.pedido = mi_pedido;
+module.exports = class pedido {
+    constructor(mi_nom, mi_email) {
+        this.nom = mi_nom;
         this.email = mi_email;
     }
 
     save() {
         contenido.push({
-            pedido: this.pedido,
+            nom: this.nom,
             email: this.email
         });
     }

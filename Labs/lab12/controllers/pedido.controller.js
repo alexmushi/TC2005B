@@ -1,5 +1,5 @@
 const { log } = require("console");
-const Pedido = require("../models/pedido.model.js");
+const pedido = require("../models/pedido.model.js");
 
 exports.getPedido = (request, response) => {
     response.render("pedido.ejs");
@@ -7,11 +7,11 @@ exports.getPedido = (request, response) => {
 
 // Procesamiento de datos
 exports.postPedido = (request, response) => {
-    const pedido = request.body.pedido;
+    const nom = request.body.nom;
     const email = request.body.email;
 
     // Crear objeto Pedido
-    const newPedido = new Pedido(pedido, email);
+    const newPedido = new pedido(nom, email);
 
     // Guardar objeto
     newPedido.save();
@@ -21,6 +21,6 @@ exports.postPedido = (request, response) => {
 };
 
 exports.pedidoData = (request, response) => {
-    const pedidos = Pedido.fetchAll();
+    const pedidos = pedido.fetchAll();
     response.render("index.ejs", { pedidos: pedidos });
 };

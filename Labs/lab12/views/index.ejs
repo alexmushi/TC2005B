@@ -21,25 +21,23 @@
         </div>
     </section>
 
-    <h3 class="title is-3">Pedidos Recibidos:</h3>
+    <h3 class="title is-3">Emails de los pedidos recibidos:</h3>
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
     <thead>
         <tr>
-            <th>Pedido</th>
             <th>Email</th>
         </tr>
     </thead>
     <tbody>
-        <% for(let pedido of pedidos) { %>
-            <% if(pedido.nombre && pedido.email) { %>
-                <tr>
-                    <td><%= pedido.nombre %></td>
-                    <td><%= pedido.email %></td>
-                </tr>
-            <% } %>
-        <% } %>
+        <% pedidos.forEach(nom => { %>
+            <tr>
+                <td><%= nom.email %></td>
+            </tr>
+        <% }); %>
     </tbody>
 </table>
+
+
 
 <div id="spotifyPlaylist">
     <script>
