@@ -29,3 +29,13 @@ Gestión de permisos
 Desventajas de usar RBAC:
 Complejidad
 Falta de gestión granular de usuarios
+
+¿Qué ventajas y desventajas tiene la integración de tus aplicaciones web con servicios web desarrollados por terceros?
+Ventajas de servicios web:
+Descentralización de actividades
+Simplicidad de integración
+No tienes que hacer el código tú
+Desventajas de servicios web:
+Ahora dependes del tercero
+No puedes personalizarlo
+Algunos tienen costo extra

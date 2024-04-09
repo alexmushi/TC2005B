@@ -41,6 +41,36 @@
     </tbody>
 </table>
 
+<div id="spotifyPlaylist">
+    <script>
+        const playlistId = '7yS1xDR88veeBYLu9gTAlz';
+        const accessToken = 'b1c85ce6d44a4c0b823f50d717568c9f';
+      
+        fetch(`https://api.spotify.com/v1/playlists/${playlistId}`, {
+          headers: {
+            'Authorization': `Bearer ${accessToken}`
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          const playlist = data;
+          const playlistEmbedUrl = `https://open.spotify.com/embed/playlist/${playlistId}`;
+      
+          const iframe = document.createElement('iframe');
+          iframe.src = playlistEmbedUrl;
+          iframe.title = 'Spotify Embed: Recommendation Playlist';
+          iframe.width = '100%';
+          iframe.height = '100%';
+          iframe.style.minHeight = '360px';
+          iframe.frameBorder = '0';
+          iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+          iframe.loading = 'lazy';
+      
+          document.getElementById('spotifyPlaylist').appendChild(iframe);
+        })
+        .catch(error => console.error('Error:', error));
+      </script>
+</div>
 
 </body>
 
