@@ -2,41 +2,23 @@
 const  express = require("express");
 const router = express.Router();
 
-// app.use(express.urlencoded({ extended: true }));
+//Para utilizar controllers
+const indexHandler = require("../controllers/index.controller.js");
+const cascosHandler = require("../controllers/cascos.controller.js");
+const enviarPedidoHandler = require("../controllers/enviar-pedido.controller.js");
+const litofaniaHandler = require("../controllers/litofania.controller.js");
+const modeladoHandler = require("../controllers/modelado.controller.js");
+const pedidoHandler = require("../controllers/pedido.controller.js");
 
-//Para acceder a datos de usuario
-let pedidos = [];
+//get
+router.get("/", pedidoHandler.pedidoData);
+router.get("/cascos", cascosHandler.getCascos);
+router.get("/enviar-pedido", enviarPedidoHandler.getEnviarPedido);
+router.get("/litofania", litofaniaHandler.getLitofania);
+router.get("/modelado", modeladoHandler.getModelado); 
+router.get("/pedido", pedidoHandler.getPedido); 
 
-//Para la ruta root (página principal)
-router.get('/',(request, response) =>{
-    response.render('index.ejs', {pedidos: pedidos});
-})
-
-//Para la ruta cascos
-router.get('/cascos',(request, response) => {
-    response.render('cascos.ejs');
-});
-
-//Para la ruta litofania
-router.get('/litofania',(request, response) => {
-    response.render('litofania.ejs');
-})
-
-//Para la ruta modelado
-router.get('/modelado',(request, response) => {
-    response.render('modelado.ejs');
-})
-
-//Para la ruta pedido, get
-router.get('/pedido', (request, response) => {
-    response.render('pedido.ejs');
-});
-
-//Para la ruta pedido, post
-router.post('/pedido', (request, response) => {
-    const { nombre, email, modelo, dimensiones, material, color, comentarios } = request.body;
-    pedidos.push({ nombre, email, modelo, dimensiones, material, color, comentarios });
-    response.render('index.ejs', { pedidos: pedidos });
-});
+//post 
+router.post("/pedido", pedidoHandler.postPedido);
 
 module.exports = router;
