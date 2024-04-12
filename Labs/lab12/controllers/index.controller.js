@@ -2,8 +2,10 @@ const Pedido = require("../models/pedido.model.js");
 
 exports.getIndex = async (request, response, next) => {
     try {
-        const recs = await Pedido.fetchAll();
-        response.render("index.ejs", {data: recs});
+        const pedidos = await Pedido.fetchAll();
+        const cookiePed = request.cookies.cookiePed || "";
+        const username = request.session.username || "";
+        response.render("index.ejs", {data: pedidos, cookiePed: cookiePed, username: username});
     } catch (error) {
         //En caso de error
         console.error("Error cargando pedidos", error);

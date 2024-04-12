@@ -37,7 +37,10 @@
     </tbody>
 </table>
 
-
+    <% if(cookieEmail != "") { %>
+    <p>El último email que pidió algo fue <%- cookieEmail %>.</p>
+    <br></br>
+    <% } %>
 
 <div id="spotifyPlaylist">
     <script>
