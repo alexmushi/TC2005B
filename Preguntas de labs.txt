@@ -37,8 +37,6 @@ Desventajas de usar RBAC:
 Complejidad
 Falta de gestión granular de usuarios
 
-
-
 ¿Qué ventajas y desventajas tiene la integración de tus aplicaciones web con servicios web desarrollados por terceros?
 Ventajas de servicios web:
 Descentralización de actividades
@@ -48,5 +46,13 @@ Desventajas de servicios web:
 Ahora dependes del tercero
 No puedes personalizarlo
 Algunos tienen costo extra
+
+Para que el sitio fuera más accesible, decidí seguir los lineamientos de uxdesign. Agregué contraste en los colores, focus indicators para los tabs y en vez de usar placeholders puse texto arriba. De igual manera, el logo tiene texto alternativo que describe lo que es. Si agregamos más imágenes, agregaremos más texto alternativo. También usé headings para los títulos y texto para definir jerarquías. 
+¿Por qué es importante la accesibilidad?
+La accesibilidad es importante para que no haya barreras entre los usuarios y el software. Al agregar opciones para usuarios con capacidades diferentes, los incluyes y le das más valor a la aplicación.
+¿Cuáles son los lineamientos de accesibilidad que consideras más importantes? ¿Por qué?
+Considero que los lineamientos de accesibilidad más importantes son los del contraste, markup correcto y usar alt text para las imágenes. Esto permite que usuarios con visión baja puedan entender más fácilmente la página.
+Describe 3 cambios que harás en tu proyecto para hacerlo más accesible.
+Haré gráficas accesibles, permitiré usar tab para navegación y haré pruebas con una persona con visión baja para que me diga las áreas de oportunidad
 
 
