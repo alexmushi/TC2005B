@@ -21,26 +21,6 @@
         </div>
     </section>
 
-    <h3 class="title is-3">Emails de los pedidos recibidos:</h3>
-<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-    <thead>
-        <tr>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <% pedidos.forEach(nom => { %>
-            <tr>
-                <td><%= nom.email %></td>
-            </tr>
-        <% }); %>
-    </tbody>
-</table>
-
-    <% if(cookieEmail != "") { %>
-    <p>El último email que pidió algo fue <%- cookieEmail %>.</p>
-    <br></br>
-    <% } %>
 
 <div id="spotifyPlaylist">
     <script>

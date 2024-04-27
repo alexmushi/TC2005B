@@ -1,0 +1,5 @@
+Para este laboratorio se hizo la consulta de estado de cuenta en el proyecto: https://github.com/Mikebarrsan/Infinishk/commit/bfcc73ea3974dc6b10cd58938f6fe33cf3584bb3
+Puse nada más un commit, pero a lo largo del proyecto se actualizó y se puede ver la versión más nueva en la branch CU06/consultar_estadoCuenta.
+
+Entiendo cómo interactúa una aplicación web con una base de datos.
+Desarrollé una aplicación web que interactúa con una base de datos.
