@@ -1,0 +1,5 @@
+Se implementó RBAC en nuestro proyecto: https://github.com/Mikebarrsan/Infinishk/tree/main
+Cada rol tiene permisos, y las páginas se ajustan dinámicamente depende de los permisos. Nos basamos en permisos en vez de roles para poder hacer la aplicación escalable, pues quizás en un futuro exista un rol que tenga algunos permisos de admin pero otros de visualizador.
+
+Un caso donde se pude ver esto y que implementé yo es el siguiente: https://github.com/Mikebarrsan/Infinishk/blob/main/views/configuracion/administrar_planpago.ejs
+

@@ -25,6 +25,7 @@ Autenticación biométrica, usa características como las huellas o el reconocim
 
 ¿En qué consiste el control de acceso basado en roles?
 Es un enfoque en los sistemas que permite a usuarios accesar información dependiendo de su nivel de autorización. Cada usuario tiene un rol y cada rol tiene distintos permisos.
+
 Investiguen y describan 2 sistemas, uno que aplique RBAC y uno que no. Realicen un análisis de las ventajas y desventajas de cada uno con respecto al control de acceso.
 WordPress es un sistema que usa RBAC. Existen autores, editores, suscriptores y admins. 
 Drupal es un sistema que no usa RBAC. Los permisos son otorgados individualmente a los usuarios.
@@ -35,6 +36,8 @@ Gestión de permisos
 Desventajas de usar RBAC:
 Complejidad
 Falta de gestión granular de usuarios
+
+
 
 ¿Qué ventajas y desventajas tiene la integración de tus aplicaciones web con servicios web desarrollados por terceros?
 Ventajas de servicios web:
