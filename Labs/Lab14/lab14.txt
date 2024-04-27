@@ -1,0 +1,6 @@
+Para este laboratorio se hizo el login en el proyecto: https://github.com/Mikebarrsan/Infinishk/blame/main/views/login.ejs
+https://github.com/Mikebarrsan/Infinishk/blame/main/controllers/session.controller.js
+Algunos commits son de Jesús porque me junté con él para pair programming, pero el caso de uso es mío.
+Entiendo la manera en que funcionan las sesiones.
+Entiendo la manera en que funcionan las cookies.
+Implementé una aplicación web que mantiene los datos a través de diferentes peticiones.
