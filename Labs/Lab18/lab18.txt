@@ -1,0 +1,8 @@
+Para este laboratorio se hizo el login en el proyecto: https://github.com/Mikebarrsan/Infinishk/blame/main/views/login.ejs
+https://github.com/Mikebarrsan/Infinishk/blame/main/controllers/session.controller.js
+Algunos commits son de Jesús porque me junté con él para pair programming, pero el caso de uso es mío.
+
+Entiendo cómo funciona la autentificación de usuarios.
+Desarrollé una aplicación web con autentificación de usuarios.
+Desarrollé una aplicación web con rutas protegidas.
+Usé tokens CSRF para evitar ataques CSRF.
